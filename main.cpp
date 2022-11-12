@@ -11,9 +11,9 @@ int main()
     cin >> num;
     for(int i=0; i<11; i++)
     {
-        if (num%prime[i]==0 && num != prime[i])
+        if(num%prime[i]==0 && num != prime[i])
         {
-            
+            cout << num << "is not a prime number" << endl;
             cout << prime[i] << "\t";
             for(int j=i+1;j<11;j++)
             {
@@ -25,5 +25,5 @@ int main()
     }
     cout << num << " is prime!" << endl;
     return 0;
-} 
+}
 
